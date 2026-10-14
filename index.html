@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adee Foods — fresh groceries, desi ghee, premium rice, pure honey and daily essentials delivered to your door.">
+  <title>Adee Foods | Freshness • Quality • For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>✦ Free delivery on orders above Rs. 3,000</span>
+      <div><a href="#delivery">Track Order</a><a href="#footer">Help</a><a href="#footer">Login / Register</a></div>
+    </div>
+  </div>
+
+  <header class="wrap header">
+    <a class="brand" href="#" aria-label="Adee Foods home">
+      <span class="brand-mark">A<span>✦</span></span>
+      <span class="brand-text"><b>Adee <em>Foods</em></b><small>Freshness · Quality · For You</small></span>
+    </a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search ghee, rice, honey and more..." aria-label="Search products">
+      <button aria-label="Search">⌕</button>
+    </form>
+    <button class="cart-button" id="cartJump" aria-label="View cart">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <button class="category-menu" id="categoryMenu">☰ &nbsp; All Categories</button>
+      <div class="nav-links"><a class="active" href="#">Home</a><a href="#categories">Shop</a><a href="#why">About Us</a><a href="#offers">Offers</a><a href="#footer">Contact</a></div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Your trusted desi grocery store</p>
+          <h1>Good food.<br><span>Better living.</span></h1>
+          <p class="hero-desc">Desi ghee, premium rice, pure honey and everyday essentials — carefully selected for your family.</p>
+          <a class="primary-btn" href="#products">Shop our products <span>→</span></a>
+          <div class="hero-points"><span>✓ Quality essentials</span><span>✓ Great value</span></div>
+        </div>
+        <div class="hero-art">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=900&q=85" alt="Fresh pantry ingredients and groceries">
+          <div class="hero-sticker">Good Food<br><b>Healthy Life</b> ♥</div>
+        </div>
+      </div>
+      <div class="hero-bottom"></div>
+    </section>
+
+    <section class="wrap section" id="categories">
+      <div class="section-heading"><p class="eyebrow">Explore our range</p><h2>Shop by <span>Category</span></h2><p>Everyday essentials, all in one place.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-filter="ghee"><span class="cat-emoji">🫙</span><b>Desi Ghee</b><small>Rich & traditional</small></button>
+        <button class="category-card" data-filter="rice"><span class="cat-emoji">🌾</span><b>Rice & Grains</b><small>Premium quality</small></button>
+        <button class="category-card" data-filter="honey"><span class="cat-emoji">🍯</span><b>Pure Honey</b><small>Naturally sweet</small></button>
+        <button class="category-card" data-filter="oil"><span class="cat-emoji">🫒</span><b>Cooking Oils</b><small>Kitchen staples</small></button>
+        <button class="category-card" data-filter="pulses"><span class="cat-emoji">🥣</span><b>Daal & Pulses</b><small>Everyday nutrition</small></button>
+        <button class="category-card" data-filter="spices"><span class="cat-emoji">🌶️</span><b>Spices</b><small>Full of flavour</small></button>
+        <button class="category-card" data-filter="snacks"><span class="cat-emoji">🥜</span><b>Snacks & Nuts</b><small>Little treats</small></button>
+        <button class="category-card" data-filter="all"><span class="cat-emoji">🛍️</span><b>All Groceries</b><small>Browse everything</small></button>
+      </div>
+    </section>
+
+    <section class="product-section" id="products">
+      <div class="wrap">
+        <div class="section-row"><div><p class="eyebrow">Hand-picked for you</p><h2>Featured <span>Products</span></h2><p>Good quality, honest prices.</p></div><a href="#products" id="viewAll">View all products <b>→</b></a></div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="ghee" data-name="desi ghee">
+            <div class="product-image"><span class="pill">Customer favourite</span><img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=600&q=85" alt="Desi ghee in a glass jar"></div>
+            <div class="product-info"><small class="product-type">DESI ESSENTIALS</small><h3>Pure Desi Ghee</h3><p class="weight">500 g jar</p><div class="price">Rs. 1,250 <del>Rs. 1,400</del></div><div class="rating">★★★★★ <small>(4.9)</small></div><button class="add-btn" data-product="Pure Desi Ghee" data-price="1250">＋ Add to Cart</button></div>
+          </article>
+          <article class="product-card" data-category="rice" data-name="premium basmati rice">
+            <div class="product-image"><span class="pill green">Premium pick</span><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=85" alt="Premium rice grains"></div>
+            <div class="product-info"><small class="product-type">RICE & GRAINS</small><h3>Premium Basmati Rice</h3><p class="weight">5 kg bag</p><div class="price">Rs. 1,899 <del>Rs. 2,100</del></div><div class="rating">★★★★★ <small>(4.8)</small></div><button class="add-btn" data-product="Premium Basmati Rice" data-price="1899">＋ Add to Cart</button></div>
+          </article>
+          <article class="product-card" data-category="honey" data-name="pure honey">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=600&q=85" alt="Golden pure honey in a jar"></div>
+            <div class="product-info"><small class="product-type">NATURAL SWEETNESS</small><h3>Pure Natural Honey</h3><p class="weight">500 g jar</p><div class="price">Rs. 950 <del>Rs. 1,100</del></div><div class="rating">★★★★★ <small>(4.8)</small></div><button class="add-btn" data-product="Pure Natural Honey" data-price="950">＋ Add to Cart</button></div>
+          </article>
+          <article class="product-card" data-category="oil" data-name="cooking oil">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=85" alt="Golden cooking oil in a bottle"></div>
+            <div class="product-info"><small class="product-type">KITCHEN STAPLES</small><h3>Premium Cooking Oil</h3><p class="weight">1.5 litre bottle</p><div class="price">Rs. 899 <del>Rs. 980</del></div><div class="rating">★★★★☆ <small>(4.6)</small></div><button class="add-btn" data-product="Premium Cooking Oil" data-price="899">＋ Add to Cart</button></div>
+          </article>
+          <article class="product-card" data-category="pulses" data-name="mixed daal pulses">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1515543904379-3d7578b1e9a4?auto=format&fit=crop&w=600&q=85" alt="Bowls of lentils and pulses"></div>
+            <div class="product-info"><small class="product-type">DAAL & PULSES</small><h3>Everyday Daal Mix</h3><p class="weight">1 kg pack</p><div class="price">Rs. 480 <del>Rs. 540</del></div><div class="rating">★★★★★ <small>(4.7)</small></div><button class="add-btn" data-product="Everyday Daal Mix" data-price="480">＋ Add to Cart</button></div>
+          </article>
+          <article class="product-card" data-category="spices" data-name="desi spices">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=85" alt="Colourful desi spices"></div>
+            <div class="product-info"><small class="product-type">DESI FLAVOURS</small><h3>Desi Spice Selection</h3><p class="weight">Set of 4 packs</p><div class="price">Rs. 650 <del>Rs. 750</del></div><div class="rating">★★★★★ <small>(4.7)</small></div><button class="add-btn" data-product="Desi Spice Selection" data-price="650">＋ Add to Cart</button></div>
+          </article>
+        </div>
+        <p class="demo-note">Demo prices and sample product photos — replace with your actual inventory before launch.</p>
+      </div>
+    </section>
+
+    <section class="wrap promo-grid" id="offers">
+      <article class="promo promo-dark"><div><small>FROM OUR PANTRY</small><h3>Desi Ghee<br>& Daily Staples</h3><p>Traditional taste for every home.</p><a href="#products">Shop now →</a></div><span class="promo-icon">🫙</span></article>
+      <article class="promo promo-gold"><div><small>THE GRAIN COLLECTION</small><h3>Rice that makes<br>every meal special</h3><p>Explore premium rice and grains.</p><a href="#products">Shop now →</a></div><span class="promo-icon">🌾</span></article>
+      <article class="promo promo-honey"><div><small>NATURAL GOODNESS</small><h3>Pure Honey<br>Sweet by nature</h3><p>A golden touch to your day.</p><a href="#products">Shop now →</a></div><span class="promo-icon">🍯</span></article>
+    </section>
+
+    <section class="why-section" id="why">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">The Adee promise</p><h2>Why choose <span>Adee Foods?</span></h2><p>Quality essentials, with care in every order.</p></div>
+        <div class="benefits">
+          <div><span>🚚</span><b>Reliable Delivery</b><small>Groceries at your doorstep</small></div>
+          <div><span>✓</span><b>Quality First</b><small>Selected with care</small></div>
+          <div><span>♡</span><b>Great Value</b><small>Fair prices for your family</small></div>
+          <div><span>🔒</span><b>Safe Shopping</b><small>A simple, secure experience</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter wrap">
+      <div><p class="eyebrow">A little goodness in your inbox</p><h2>Get fresh deals & updates</h2><p>Subscribe for product news and special offers.</p></div>
+      <form id="newsletterForm"><input type="email" placeholder="Enter your email address" required aria-label="Email address"><button class="primary-btn">Subscribe →</button></form>
+      <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">A<span>✦</span></span><span class="brand-text"><b>Adee <em>Foods</em></b><small>Freshness · Quality · For You</small></span></a><p>Your everyday grocery partner for desi favourites and pantry essentials.</p></div>
+      <div><h4>Quick Links</h4><a href="#">Home</a><a href="#categories">Shop</a><a href="#why">About Us</a><a href="#offers">Offers</a></div>
+      <div><h4>Customer Support</h4><a href="#footer">Help & FAQs</a><a href="#footer">Shipping Policy</a><a href="#footer">Returns Policy</a><a href="#footer">Contact Us</a></div>
+      <div><h4>Stay Connected</h4><p>Follow us for new arrivals and offers.</p><div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="TikTok">♪</a></div></div>
+    </div>
+    <div class="wrap copyright"><span>© 2026 Adee Foods. All rights reserved.</span><span>Fresh Food · Happy Homes · Adee Foods ♥</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
